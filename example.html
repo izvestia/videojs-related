@@ -1,0 +1,70 @@
+<head>
+    <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+
+    <!-- videojs-related css -->
+    <link href="videojs-related.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <video id="player" class="video-js" width="640" height="264"></video>
+
+    <script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
+
+    <!-- videojs-related js -->
+    <script src="videojs-related.js"></script>
+
+    <!-- настройка -->
+    <script>
+        var Player = videojs('player', {
+            controls: true,
+            autoplay: false,
+            preload: 'auto',
+            poster: 'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+            sources: [{
+                src: 'https://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4',
+                type: 'video/mp4'
+            }]
+        });
+
+        Player.related({
+            title: 'Похожее',
+            target: 'self',
+            list: [
+                {
+                    title:  'Похожее видео 1',
+                    url:    'http://localhost',
+                    image:  'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+                    target: 'self' // blank, self, this
+                },
+                {
+                    title:  'Похожее видео 2',
+                    url:    'http://localhost',
+                    image:  'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+                    target: 'self' // blank, self, this
+                },
+                {
+                    title:  'Похожее видео 3',
+                    url:    'http://localhost',
+                    image:  'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+                    target: 'self' // blank, self, this
+                },
+                {
+                    title:  'Похожее видео 4',
+                    url:    'http://localhost',
+                    image:  'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+                    target: 'self' // blank, self, this
+                },
+                {
+                    title:  'Похожее видео 5',
+                    url:    'http://localhost',
+                    image:  'https://www.sample-videos.com/img/Sample-jpg-image-100kb.jpg',
+                    target: 'self' // blank, self, this
+                }
+            ]
+        })
+
+    </script>
+
+</body>

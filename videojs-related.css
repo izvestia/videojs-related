@@ -1,0 +1,178 @@
+#vjs-related-video-open-button-info {
+    background-color: rgba(29, 30, 31, 0.290196);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    padding: 12px 5px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 53px;
+    top: 10px;
+    display: none
+}
+
+#vjs-related-video-open-button:hover + #vjs-related-video-open-button-info {
+    display: block
+}
+
+.vjs-related-video {
+    background: rgba(0, 0, 0, .7);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1112;
+}
+
+.vjs-related-video::-webkit-scrollbar {
+    width: 4px
+}
+
+.vjs-related-video::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    background-color: rgb(187, 115, 255);
+}
+
+.vjs-related-video::-webkit-scrollbar-track {
+    background-color: #333
+}
+
+.vjs-related-video-active {
+    display: block
+}
+
+.vjs-related-video-container {
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    clear: both
+}
+
+.vjs-related-video-title {
+    font: 700 16px/1 Arial, sans-serif;
+    margin: 5px 0 0 10px;
+    text-align: center;
+    float: left
+}
+
+.vjs-related-video-close {
+    color: #fff;
+    font-size: 30px;
+    padding: 0;
+    text-align: center;
+    float: right;
+    cursor: pointer
+}
+
+.vjs-related-video-close:hover {
+    color: #9e03ff
+}
+
+.vjs-related-video-open {
+    background-color: rgba(29, 30, 31, 0.290196);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+.vjs-related-video-open:hover {
+    color: #9e03ff;
+    cursor: pointer
+}
+
+.vjs-related-video-url {
+    width: 160px;
+    height: 133px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(4, 4, 4, 0.35);
+    border: 1px solid rgba(166, 0, 255, 0.32);
+    cursor: pointer;
+    text-align: center;
+    transition: border-color .5s ease;
+    padding: 0;
+    overflow: hidden;
+    display: block
+}
+
+.vjs-related-video-url:hover {
+    border-color: rgba(166, 0, 255, 0.69);
+    transition: border-color .5s ease
+}
+
+.vjs-related-video-img {
+    max-height: 85px;
+    margin-bottom: 5px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+}
+
+.vjs-related-video-url:hover .vjs-related-video-img {
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    top: -100%
+}
+
+.vjs-related-video-url-title {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.3;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out
+}
+
+.vjs-related-video-url:hover .vjs-related-video-url-title {
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    top: 3%
+}
