@@ -1,3 +1,18 @@
+.video-js {
+    overflow: hidden;
+}
+
+#vjs-related-video-open-button, .vjs-user-inactive #vjs-related-video-open-button {
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+}
+
+.vjs-user-inactive #vjs-related-video-open-button {
+    margin-top: -50px;
+}
+
 #vjs-related-video-open-button-info {
     background-color: rgba(29, 30, 31, 0.290196);
     color: rgba(255, 255, 255, 0.9);
